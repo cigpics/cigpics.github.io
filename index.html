@@ -1,7 +1,104 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+
+        <div id="container">
+            <div id="flex">
+                
+                <main>
+                    <h1>cigarette.pics is under construction...</h1>
+                </main>
+                
+            </div>
+        </div>
+        <!-- THIS IS THE CSS !-->
+        <style>
+            :root {
+                /* colors */
+                --content: #FFFFF;
+            }
+
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                background-color: #a9a9a9;
+                color: #000;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            #container {
+                max-width: 800px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #fff;
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #000;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #fff;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #fff;
+            }
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 600px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+        </style>
+
+    
