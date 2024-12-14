@@ -6,13 +6,14 @@
                     <h1>cigarette.pics</h1>
                         <br>
                         <p>
-<script>window.onload = choosePic;
+<script>var imgArr = ["1.jpg","2.jpg"];
 
-var myPix = new Array("1.jpg","2.jpg");
-
-function choosePic() {
-     var randomNum = Math.floor(Math.random() * myPix.length);
-     document.getElementById("myPicture").src = myPix[randomNum];</script>
+function displayImg(){
+    var num = Math.floor(Math.random() * (imgArr.length));
+    document.canvas.src="img/"+imgArr[num];
+}</script>
+                                <input type="button" onClick="displayImg()" value="Display Random Image">
+<img src="1.jpg" name="canvas" style="width:200px"/>
                         </p>
                         <p>in the meantime, you can send pictures of cigarettes (no human faces please) to <i>submit@cigarette.pics</i>.
                         if accepted, they'll be included on the website!</p>
