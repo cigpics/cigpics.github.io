@@ -8,26 +8,22 @@
                         <div id="newimage">
                         </div>
                         <p>
-<script>function randomImage(){
-        var images = [
-                'image1.jpeg',
-                'image2.jpeg',
-                'image3.jpg',
-                'image4.jpg',
-        ];
-       
-        var randomIndex = Math.floor(Math.random()*images.length);
-       
-        document.getElementById('result').innerHTML = "<img style='height:100%; width:100%;' src='images/"+images[randomIndex]+"'>";
-}</script>
+ <script type="text/javascript">
+var total_images = 2;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<img src="cig1.jpg">;
+random_img[1] = '<img src="cig2.jpg">;
+
+document.write(random_img[random_number]);
+</script>
                         
 <div>
 <button id="jsstyle" 
 onclick="randomImage();">New Cigarette</button> 
 </div>
                         </p>
-                        <p>in the meantime, you can send pictures of cigarettes (no human faces please) to <i>submit@cigarette.pics</i>.
-                        if accepted, they'll be included on the website!</p>
+                        <p>you can send pictures of cigarettes (no human faces please) to <i>submit@cigarette.pics</i>.</p>
                 </main>
                 
             </div>
